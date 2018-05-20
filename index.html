@@ -19,16 +19,18 @@
 
 <body>
 	<div data-role="page">
+		<!--___________________________ Cabecera de aplicación ___________________________________________________-->
 		<div data-role="header">
 			<a href="#panel" data-icon="bars" data-role="button" data-iconpos="notext" style="left: 22px;">Menu</a>
 			<a onclick="history.back()" data-role="button" data-icon="back" data-iconpos="notext" style="position: relative;float: left;margin-left: 69px;"></a>
 			<h1>DEMO UNAB</h1>
 			<a href="index.html" data-ajax="false" data-role="button" data-icon="home" data-iconpos="notext" style="float: right;margin-top: -34px;margin-left: -30px;right:19px;"></a>
 		</div>
+		<!--___________________________ Envio de SMS ___________________________________________________-->
 		<div data-role="content" role="main">
 			<button class="botonlugares" type="button" value="Locales" data-role="none">Demo Enviar SMS + GPS</button>
 			<div data-role="fieldcontain" style="text-align: center;">
-				Ingrese n° fono:<input id="fono" placeholder="+56998765432" name="fono" type="text" class="ui-input-text ui-body-c"  />
+				Ingrese n° fono:<input id="fono" placeholder="+56955555555" name="fono" type="text" class="ui-input-text ui-body-c"  />
 				Ingrese su mensajetexto:<input id="mensajetexto" placeholder="hola, ..." name="mensajetexto" type="text" class="ui-input-text ui-body-c"  />
 				<button class="observacionproducto"  type="button" value="Localesbutton" id="Localesbutton" data-role="none" onclick="sendSMS();" style="width: 60%">Enviar SMS</button>
 			</div>
